@@ -1,0 +1,7 @@
+This app is ideated to be a creativity tool for experienced bartenders.  
+A series of dropdown selectors with most standard spirits and mixers for the professional bar will be organized in such a way
+that the bartender can imagine a new drink based on a cocktail type (old fashioned, sour, aperitif for ex) and experiment with combinations
+of ingredients.  There's no need for an API or other form of external information; the user's own experience and knowledge informs the usage 
+of this app; all it does is provide a systemized way for them to experiment and then print the results, and gives them the ability to provide
+critical self-feedback.
+
