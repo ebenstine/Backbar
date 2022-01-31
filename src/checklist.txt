@@ -5,3 +5,49 @@ of ingredients.  There's no need for an API or other form of external informatio
 of this app; all it does is provide a systemized way for them to experiment and then print the results, and gives them the ability to provide
 critical self-feedback.
 
+
+components //
+
+build your bar - a form 
+
+    - what do you have on hand or available to you? add products
+    - 
+
+create cocktail - a form
+
+    - this contains the primary axios post of the app
+
+    - which type? old fashioned, manhattan/martini, sour, highball, aperitif
+
+    - how is it served and with what garnish?
+
+    - provide feedback
+
+list of all cocktails - a table, not editable 
+
+detail sheet for one cocktail - a graph w/ ingredient percentages, editable
+
+
+ERD //
+
+table - ingredients
+
+    - can belong to many cocktails
+    - include a sensory description 
+
+table - cocktail ingredients    
+
+    - a join table
+
+table - cocktails
+
+    - can only belong to one user
+    - type
+    - recipe
+    - how served
+    - how garnished
+    - feedback
+
+table - users
+
+

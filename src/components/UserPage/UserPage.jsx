@@ -34,7 +34,7 @@ const UserPage = () => {
           variant = "overline" 
           className = {welcome} 
         >
-          Hey, {user.username}.
+          Hey, {user.username}
         </Typography>
         <br></br>
 
@@ -44,17 +44,7 @@ const UserPage = () => {
           variant = "overline" 
           className = {welcome} 
         >
-        You are signed in. 
-        </Typography>
-        <br></br>
-
-        <Typography 
-          
-          align="center" 
-          variant = "overline" 
-          className = {welcome} 
-        >
-         And ready to make some weird drinks.  
+        You're signed in 
         </Typography>
         <br></br>
 
@@ -64,7 +54,7 @@ const UserPage = () => {
           variant = "overline" 
           className = {welcome} 
         >
-          It's 2022, and we've seen some things.
+         And ready to make some weird drinks  
         </Typography>
         <br></br>
 
@@ -74,7 +64,17 @@ const UserPage = () => {
           variant = "overline" 
           className = {welcome} 
         >
-         Might as well.
+          It's 2022, and we've seen some things
+        </Typography>
+        <br></br>
+
+        <Typography 
+          
+          align="center" 
+          variant = "overline" 
+          className = {welcome} 
+        >
+         Might as well
         </Typography>
 
 
@@ -86,7 +86,7 @@ const UserPage = () => {
           variant = "overline" 
           className = {welcome} 
         >
-         If today or every day is a sober day, hey - 
+         But hey, if today or every day is a sober day,
         </Typography>
         
       </section>
