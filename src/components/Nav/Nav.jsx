@@ -1,17 +1,49 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import LogOutButton from '../LogOutButton/LogOutButton';
-import './Nav.css';
+import { Typography } from '@mui/material';
+//import './Nav.css';
 import { useSelector } from 'react-redux';
+import { makeStyles } from '@mui/styles';
+import NavMenu from './NavMenu';
+
+const useStyles = makeStyles(() => ({
+
+  navTitle: {
+      color: '#2e6103',
+      border: "none",
+      //fontFamily: 'Mulish',
+      fontSize: 20,
+      paddingLeft: '1em',
+      fontWeight: 600
+  },
+
+  nav: {
+    display: 'flex',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+  
+    margin: '0 0 30px',
+    backgroundColor: '#f3f2f2',
+    borderBottom: '1px solid #2e6103',
+    boxShadow: '1px 1px 4px #2e6103',
+    overflow: 'hidden'
+
+
+  },
+
+  
+
+}))
+
 
 function Nav() {
   const user = useSelector((store) => store.user);
-
+  const {navTitle, nav} = useStyles();
   return (
-    <div className="nav">
-      <Link to="/home">
-        <h2 className="nav-title">Prime Solo Project</h2>
-      </Link>
+    <div className={nav} position="relative">
+      <Typography className={navTitle} >
+      B A C K B A R //
+      </Typography>
       <div>
         {/* If no user is logged in, show these links */}
         {user.id === null &&
@@ -24,22 +56,13 @@ function Nav() {
         {/* If a user is logged in, show these links */}
         {user.id && (
           <>
-            <Link className="navLink" to="/user">
-              Home
-            </Link>
-
-            <Link className="navLink" to="/info">
-              Info Page
-            </Link>
-
-            <LogOutButton className="navLink" />
+            <NavMenu/>
           </>
         )}
 
-        <Link className="navLink" to="/about">
-          About
-        </Link>
+        
       </div>
+     
     </div>
   );
 }

@@ -15,23 +15,23 @@ const useStyles = makeStyles((theme) => ({
           color: '#2a4f64',
           
           '&:hover fieldset': {
-            borderColor: '#ffab5c'
+            borderColor: '#b1b1b1'
           }
           //width: '25ch'
       },
       '& label.Mui-focused': {
-          color: '#3b95ac',
-          borderColor: '#ffab5c',
+          color: '#2e6103',
+          borderColor: '#b1b1b1',
       },
       '& .MuiInput-underline:after': {
-          borderBottomColor: '#3b95ac',
+          borderBottomColor: '#2e6103',
       }, 
           
           
           
       
       "& .MuiOutlinedInput-input": {
-          color: "#2a4f64",
+          color: "#2e6103",
          
           
       },
@@ -39,7 +39,7 @@ const useStyles = makeStyles((theme) => ({
           //border: "2px solid #3b95ac"
         //},
         "& .MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline": {
-          border: "1.5px solid#3b95ac",
+          border: "1.5px solid #2e6103",
           borderRadius: "3px 3px 3px 3px"
         },
       
@@ -47,20 +47,20 @@ const useStyles = makeStyles((theme) => ({
         
       '& .MuiOutlinedInput-root': {
           '& fieldset': {
-              color: '#3b95ac',
+              color: '#2e6103',
               //paddingLeft: '4em'
               
           },
           '& .Mui-selected': {
 
-             borderColor: '3b95ac'
+             borderColor: '#2e6103'
 
           },
           '&:hover fieldset': {
-              border:' 1.5px solid #3b95ac' 
+              border:' 1.5px solid #2e6103' 
           },  
           '&:fieldset.Mui-focused': {
-              border:' 1.5px solid #3b95ac'
+              border:' 1.5px solid #2e6103'
           
           },
           
@@ -78,20 +78,20 @@ const useStyles = makeStyles((theme) => ({
    btn: {
      marginTop: 30,
      marginBottom: 25,
-     background: '#fff099',
-         color: '#2a4f64',
-         border: '1px solid #3b95ac',
+     background: 'transparent',
+         color: '#2e6103',
+         border: '1px solid #2e6103',
          '&:hover': {
-             background:'#fde76c',
+             background:'#76a56c',
              },
      paddingLeft: '1em',
      paddingRight: '1em',
-     color: '#2a4f64' 
+     color: '#2e6103' 
    },
    
    signIn: {
      marginBottom: 15,
-     color: '#2a4f64',
+     color: '#2e6103',
      
      
    },
@@ -156,7 +156,7 @@ function LoginForm() {
 
           <Grid item lg={2} xs={6} sm={3} md={3}>
             {/* login inputs / button */}
-            <Typography variant="h5" className={classes.signIn}>Sign In</Typography>
+            <Typography variant="h5" className={classes.signIn}>S I G N  /I N</Typography>
           </Grid>
           {errors.loginMessage && (
             <h3 className="alert" role="alert">
@@ -174,7 +174,7 @@ function LoginForm() {
           </Grid>
           
             <Grid item lg={2} xs={6} sm={3} md={3}>
-              <Button variant="contained" className={classes.btn} align="center" onClick={login}>Go!</Button>
+              <Button variant="contained" className={classes.btn} align="center" onClick={login}>start</Button>
             </Grid>
           
 

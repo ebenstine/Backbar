@@ -6,20 +6,20 @@ import { Button, Paper, Typography, makeStyles } from '@material-ui/core';
 const useStyles = makeStyles({
 
   invite: {
-    color: '#2a4f64',
+    color: '#2e6103',
 
   },
 
   signUp: {
-    background: '#fff099',
-        color: '#2a4f64',
-        border: '1px solid #3b95ac',
+    background: 'transparent',
+        color: '#2e6103',
+        border: '1px solid #2e6103',
         '&:hover': {
-            background:'#fde76c',
+            background:'#76a56c',
             },
     paddingLeft: '1em',
     paddingRight: '1em',
-    color: '#2a4f64',
+    color: '#2e6103',
     marginBottom: '10em'
   },
 
@@ -47,7 +47,7 @@ function LoginPage() {
   
       <LoginForm />
       <Typography align="center" variant="h6" className={invite}>
-      No account yet?
+      O R //
       </Typography>
       <br></br>
       <center>
@@ -58,7 +58,7 @@ function LoginPage() {
             history.push('/registration');
           }}
         >
-          Make One!
+          sign up 
         </Button>
       </center>
      
