@@ -20,7 +20,7 @@ const useStyles = makeStyles((theme) => ({
           //width: '25ch'
       },
       '& label.Mui-focused': {
-          color: '#2e6103',
+          color: '#76a56c',
           borderColor: '#b1b1b1',
       },
       '& .MuiInput-underline:after': {
@@ -31,7 +31,7 @@ const useStyles = makeStyles((theme) => ({
           
       
       "& .MuiOutlinedInput-input": {
-          color: "#2e6103",
+          color: "#76a56c",
          
           
       },
@@ -83,6 +83,7 @@ const useStyles = makeStyles((theme) => ({
          border: '1px solid #2e6103',
          '&:hover': {
              background:'#76a56c',
+             color: '#f2f2f2'
              },
      paddingLeft: '1em',
      paddingRight: '1em',

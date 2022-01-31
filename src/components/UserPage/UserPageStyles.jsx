@@ -1,12 +1,12 @@
-import { makeStyles } from '@mui/styles';
+import { makeStyles } from '@material-ui/core/styles';
 
 const useStyles = makeStyles(() => ({
     
     
     paper: {
         margin: '4em auto',
-        background: 'linear-gradient(to right,  #9c9e9f 0%,#f6f6f6 100%)',
-        border: '1px solid #ffb171',
+        background: 'linear-gradient(to right,  #b6e6ab 0%,#f6f6f6 100%)',
+        border: '1px solid #2e6103',
         paddingBottom: '2em',
         width: 650,
         marginBottom: '10em'
@@ -14,9 +14,9 @@ const useStyles = makeStyles(() => ({
     
     
     welcome: {
-        color: '#233d4d',
-        //borderBottom: '1.5px solid #6ca0ad',
-        fontSize: 24
+        color: '#1f4400',
+        alignItems: 'center',
+        fontSize: 17
         
         
     },
@@ -54,14 +54,15 @@ const useStyles = makeStyles(() => ({
     button2: {
         
         marginBottom: '-2em',
-        marginLeft: '21em',
-        color: '#233d4d',
-        background: '#fff099',
-        border: '1px solid #6ca0ad',
+        
+        color: '#2e6103',
+        background: 'transparent',
+        border: '1px solid #2e6103',
         paddingLeft: '1em',
         paddingRight: '1em',
         '&:hover': {
-            background:'#fde76c',
+            background:'#76a56c',
+            color: '#f2f2f2'
             },
      
             
@@ -96,6 +97,11 @@ const useStyles = makeStyles(() => ({
         backgroundColor: "#d0f7fa",
         border: '1px solid #1d778d'
     
+    },
+
+    text: {
+
+        align: 'center'
     }
 
     
