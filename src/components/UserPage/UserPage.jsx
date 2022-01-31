@@ -1,18 +1,78 @@
-import React from 'react';
-import LogOutButton from '../LogOutButton/LogOutButton';
-import {useSelector} from 'react-redux';
+import React, {useEffect} from 'react';
+import {useSelector, useDispatch } from 'react-redux';
+import { Paper, Button, Typography, Card } from '@material-ui/core'
+import useStyles from '../UserPage/UserPageStyles'
 
-function UserPage() {
-  // this component doesn't do much to start, just renders some user reducer info to the DOM
+const UserPage = () => {
+  
   const user = useSelector((store) => store.user);
+  
+  const { paper, 
+          welcome, 
+          
+          button2, 
+          
+          infoCard
+        
+        } = useStyles();
+
+
+  const dispatch = useDispatch();
+
+ 
+
   return (
-    <div className="container">
-      <h2>Welcome, {user.username}!</h2>
-      <p>Your ID is: {user.id}</p>
-      <LogOutButton className="btn" />
-    </div>
+    <>
+    
+    <Paper className={paper} elevation={10}>
+      
+      <div className="container">
+
+        <Typography 
+          
+          align="center" 
+          variant = "overline" 
+          className = {welcome} 
+        >
+          Hey, {user.username}!
+        </Typography>
+
+        <br></br>
+        <Card className={infoCard}>
+        
+        <br></br>
+      
+        
+      
+        <br></br>
+      
+        
+
+        <br></br>
+
+      </Card>
+      </div>
+      
+        <section textAlign="center">
+    
+    
+      
+          <Button 
+
+            variant="contained" 
+            size="small" 
+            className={button2} 
+            onClick={() => dispatch({ type: 'LOGOUT' })}>Sign Out&nbsp;
+            
+
+          </Button>
+
+        </section>
+
+      </Paper>
+    
+    </>
   );
 }
 
-// this allows us to use <App /> in index.js
 export default UserPage;
