@@ -111,7 +111,7 @@ const NavMenu = ({user}) => {
             
               <Typography variant="overline">
             
-                &nbsp;Currently Drinking ///
+                &nbsp;current recipes ///
               
               </Typography>    
             
@@ -130,10 +130,10 @@ const NavMenu = ({user}) => {
                 
                 }}
                 onClick={handleClose}  
-
+              
               >
             
-            <Typography variant="overline">
+            <Typography variant="overline" >
             
             &nbsp;make a new drink ///
           

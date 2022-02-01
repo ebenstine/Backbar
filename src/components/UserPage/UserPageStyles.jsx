@@ -57,7 +57,9 @@ const useStyles = makeStyles(() => ({
         
         color: '#2e6103',
         background: 'transparent',
-        border: '1px solid #2e6103',
+        //border: '1px solid #2e6103',
+        borderRadius: '4px',
+        borderBottom: '3px solid #2e6103',
         paddingLeft: '1em',
         paddingRight: '1em',
         '&:hover': {

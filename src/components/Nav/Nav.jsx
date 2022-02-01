@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Typography } from '@mui/material';
+import { Typography, MenuItem } from '@mui/material';
 //import './Nav.css';
 import { useSelector } from 'react-redux';
 import { makeStyles } from '@mui/styles';
@@ -11,7 +11,7 @@ const useStyles = makeStyles(() => ({
   navTitle: {
       color: '#2e6103',
       border: "none",
-      //fontFamily: 'Mulish',
+      fontFamily: 'Mulish',
       fontSize: 20,
       paddingLeft: '1em',
       fontWeight: 600
@@ -41,9 +41,11 @@ function Nav() {
   const {navTitle, nav} = useStyles();
   return (
     <div className={nav} position="relative">
+      <MenuItem component={Link} to={'/about'}>
       <Typography className={navTitle} >
-      B A C K B A R //
+      B A C K B A R // 
       </Typography>
+      </MenuItem>
       <div>
         {/* If no user is logged in, show these links */}
         {user.id === null &&

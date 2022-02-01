@@ -87,7 +87,7 @@ const UserPage = () => {
           variant = "overline" 
           className = {welcome} 
         >
-         But hey, if today or every day is a sober day,
+         Or, if today or every day is a sober day,
         </Typography>
         
       </section>
@@ -101,7 +101,14 @@ const UserPage = () => {
             variant="contained" 
             size="small" 
             className={button2} 
-            onClick={() => dispatch({ type: 'LOGOUT' })}>Sign Out&nbsp;
+            onClick={() => dispatch({ type: 'LOGOUT' })}
+            
+            >
+              <Typography variant="overline">
+              
+              Sign Out&nbsp;
+
+              </Typography>
             
 
           </Button>
