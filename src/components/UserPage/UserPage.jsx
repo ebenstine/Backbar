@@ -64,7 +64,7 @@ const UserPage = () => {
           variant = "overline" 
           className = {welcome} 
         >
-          It's 2022, and we've seen some things
+         Might as well
         </Typography>
         <br></br>
 
@@ -74,11 +74,12 @@ const UserPage = () => {
           variant = "overline" 
           className = {welcome} 
         >
-         Might as well
+          After all it's 2022, and we've seen some things
         </Typography>
-
-
         <br></br>
+
+
+       
 
         <Typography 
           
