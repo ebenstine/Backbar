@@ -96,7 +96,7 @@ const NavMenu = ({user}) => {
           
           <MenuItem 
               className={navLinks}
-              component={Link} to={'/addSong'}
+              component={Link} to={'/liveCocktails'}
               style = {{
 
                   color: '#1f4400',
@@ -118,7 +118,7 @@ const NavMenu = ({user}) => {
 
             <MenuItem 
               className={navLinks}
-              component={Link} to={'/addSong'}
+              component={Link} to={'/addCocktail'}
               style = {{
 
                   color: '#1f4400',
@@ -140,7 +140,7 @@ const NavMenu = ({user}) => {
 
             <MenuItem 
               className={navLinks}
-              component={Link} to={'/addSong'}
+              component={Link} to={'/stockBar'}
               style = {{
 
                   color: '#1f4400',
@@ -162,7 +162,7 @@ const NavMenu = ({user}) => {
 
             <MenuItem 
               className={navLinks}
-              component={Link} to={'/addSong'}
+              component={Link} to={'/cocktails'}
               style = {{
 
                   color: '#1f4400',
@@ -176,7 +176,7 @@ const NavMenu = ({user}) => {
             
                   
             
-                &nbsp;Check Feedback ///
+                &nbsp;All Cocktails ///
             
               
 

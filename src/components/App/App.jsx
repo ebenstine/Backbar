@@ -19,6 +19,11 @@ import InfoPage from '../InfoPage/InfoPage';
 import LandingPage from '../LandingPage/LandingPage';
 import LoginPage from '../LoginPage/LoginPage';
 import RegisterPage from '../RegisterPage/RegisterPage';
+import Cocktails from '../Cocktails/Cocktails';
+import LiveCocktails from '../LiveCocktails/LiveCocktails'
+import AddCocktail from '../AddCocktail/AddCocktail';
+import StockBar from '../StockBar/StockBar';
+import CocktailDetails from '../CocktailDetails/CocktailDetails'
 
 import './App.css';
 
@@ -67,6 +72,49 @@ function App() {
           >
             <InfoPage />
           </ProtectedRoute>
+
+          <ProtectedRoute
+            // logged in shows UserPage else shows LoginPage
+            exact
+            path="/cocktails"
+          >
+            <Cocktails />
+          </ProtectedRoute>
+
+          <ProtectedRoute
+            // logged in shows UserPage else shows LoginPage
+            exact
+            path="/liveCocktails"
+          >
+            <LiveCocktails />
+          </ProtectedRoute>
+
+          <ProtectedRoute
+            // logged in shows UserPage else shows LoginPage
+            exact
+            path="/addCocktail"
+          >
+            <AddCocktail />
+          </ProtectedRoute>
+
+          <ProtectedRoute
+            // logged in shows UserPage else shows LoginPage
+            exact
+            path="/cocktails/:id"
+          >
+            <CocktailDetails />
+          </ProtectedRoute>
+
+          <ProtectedRoute
+            // logged in shows UserPage else shows LoginPage
+            exact
+            path="/stockBar"
+          >
+            <StockBar/>
+          </ProtectedRoute>
+
+
+
 
           <Route
             exact
