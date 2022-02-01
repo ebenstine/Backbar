@@ -12,12 +12,12 @@ const useStyles = makeStyles((theme) => ({
 
     navLinks: {
         color: '#2e6103',
-        background:  'rgb(230, 252, 255)',
+        background:  '#f3f2f2',
         '&:hover': {
-            background:'#94d9eb',
+            background:'linear-gradient(to right,  #b6e6ab 0%,#f6f6f6 100%)',
             },
         margin: theme.spacing(1),
-        border: "1px solid #eb9148",
+        border: "1px solid #2e6103",
         borderRadius: "3px"
     },
 
@@ -77,13 +77,15 @@ const NavMenu = ({user}) => {
           
             <Dialog 
                 
+                raised={true}
                 open={open}
                   PaperProps={{
                     style: 
                           { 
-                            border: "1px solid #2a4f64",
+                            border: "1px solid #1f4400",
                             position: "fixed", top: 0, right: 0, m: 0, 
-                            background: "rgb(199, 246, 252)"
+                            background: "#dfdfdf",
+                            
                           }
             
                             }}
@@ -92,45 +94,12 @@ const NavMenu = ({user}) => {
 
             >
           
-            <MenuItem
+          <MenuItem 
               className={navLinks}
-          
-            >
-          
-              <Link 
-                
-                to="/songsList"
-                style = {{
-            
-                  color: '#233d4d',
-                  display:'flex',
-                  flexWrap: 'wrap'
+              component={Link} to={'/addSong'}
+              style = {{
 
-                }}
-                onClick={handleClose}
-              >
-            
-                
-                
-                <Typography component="h5">
-                  
-                  &nbsp;View Active Songs
-
-                </Typography> 
-              
-              </Link>
-            
-            </MenuItem>
-
-            <MenuItem 
-              className={navLinks}
-            >
-           
-              <Link  
-                to="/addSong"
-                style = {{
-
-                  color: '#233d4d',
+                  color: '#1f4400',
                   display:'flex',
                   flexWrap: 'wrap',
                 
@@ -141,64 +110,77 @@ const NavMenu = ({user}) => {
             
                   
             
-                &nbsp;Add a New Song
+                &nbsp;Currently Drinking ///
             
-              </Link>
+              
 
             </MenuItem>
 
-            <MenuItem
+            <MenuItem 
               className={navLinks}
-          
-            >
-          
-              <Link 
-                to="/InactiveArchive"
-                style = {{
-            
-                  color: '#233d4d',
-                  display:'flex',
-                  flexWrap: 'wrap'
+              component={Link} to={'/addSong'}
+              style = {{
 
+                  color: '#1f4400',
+                  display:'flex',
+                  flexWrap: 'wrap',
+                
                 }}
-                onClick={handleClose}
+                onClick={handleClose}  
+
               >
             
-                
+                  
             
-                  <Typography component="h5">
+                &nbsp;Make a New Drink ///
+            
               
-                    &nbsp;View Inactive Archive
-            
-                  </Typography>
 
-                </Link>
-          
             </MenuItem>
 
-          <MenuItem 
-            className={navLinks}
-          >
-            
-            <Link 
-              to="/user"
+            <MenuItem 
+              className={navLinks}
+              component={Link} to={'/addSong'}
               style = {{
-                
-                color: '#233d4d',
-                display:'flex',
-                flexWrap: 'wrap'
+
+                  color: '#1f4400',
+                  display:'flex',
+                  flexWrap: 'wrap',
                 
                 }}
-                onClick={handleClose}
-            > 
+                onClick={handleClose}  
+
+              >
+            
+                  
+            
+                &nbsp;Add to Bar Stock ///
             
               
+
+            </MenuItem>
+
+            <MenuItem 
+              className={navLinks}
+              component={Link} to={'/addSong'}
+              style = {{
+
+                  color: '#1f4400',
+                  display:'flex',
+                  flexWrap: 'wrap',
+                
+                }}
+                onClick={handleClose}  
+
+              >
             
-                &nbsp;Account Details
+                  
             
-            </Link>
-        
-          </MenuItem>
+                &nbsp;Check Feedback ///
+            
+              
+
+            </MenuItem>
         
         </Dialog>
         
