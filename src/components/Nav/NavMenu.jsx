@@ -18,7 +18,8 @@ const useStyles = makeStyles((theme) => ({
             },
         margin: theme.spacing(1),
         border: "1px solid #2e6103",
-        borderRadius: "3px"
+        borderRadius: "3px",
+        fontSize: 22
     },
 
     menu: {
@@ -108,9 +109,11 @@ const NavMenu = ({user}) => {
 
               >
             
-                  
+              <Typography variant="overline">
             
                 &nbsp;Currently Drinking ///
+              
+              </Typography>    
             
               
 
@@ -130,11 +133,12 @@ const NavMenu = ({user}) => {
 
               >
             
-                  
+            <Typography variant="overline">
             
-                &nbsp;Make a New Drink ///
-            
-              
+            &nbsp;make a new drink ///
+          
+          </Typography>    
+        
 
             </MenuItem>
 
@@ -152,10 +156,11 @@ const NavMenu = ({user}) => {
 
               >
             
-                  
+            <Typography variant="overline">
             
-                &nbsp;Add to Bar Stock ///
-            
+            &nbsp;bar inventory ///
+          
+          </Typography>   
               
 
             </MenuItem>
@@ -174,10 +179,12 @@ const NavMenu = ({user}) => {
 
               >
             
-                  
+            <Typography variant="overline">
             
-                &nbsp;All Cocktails ///
-            
+            &nbsp;cocktail library ///
+          
+          </Typography>   
+              
               
 
             </MenuItem>
